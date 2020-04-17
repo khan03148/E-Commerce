@@ -10,8 +10,9 @@ export default class NavBar extends Component {
         return (
             <NavWrapper className="navbar navbar-expand-sm  navbar-dark px-sm-5">
                 <Link to="/">
-                    <img src={logo} alt="logo" className="navbar-brand"/>
+                    <img style={{height:"65px"}} src={logo} alt="logo" className="navbar-brand"/>
                 </Link>
+                Store
                 <ul className="navbar-nav align-item-center">
                   <li className="nav-item ml-5">
                       <Link to="/" className="nav-link">
