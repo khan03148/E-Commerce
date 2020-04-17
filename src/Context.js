@@ -34,7 +34,7 @@ export default class ProductProvider extends Component {
     });
 
     this.setState(() => {
-      return { prodcuts: tempProducts };
+      return { products: tempProducts };
     });
   };
 
@@ -166,11 +166,10 @@ export default class ProductProvider extends Component {
   clearCart = () => {
     this.setState(
       () => {
-        return { cart: [] };
+        return {cart:[]};
       },
       () => {
-        //both fun calls to reset products and addtotals to add again to cart
-        this.setProduct();
+         this.setProduct();
         this.addTotals();
       }
     );
